@@ -26,12 +26,9 @@
       "strict": true,
       "strictNullChecks": true,
       "strictPropertyInitialization": true,
-      "target": "ES2020",
+      "target": "ESNext",
       "paths": {
-        "~": ["./src"],
-        "~/array": ["./src/packlets/array"],
-        "~/object": ["./src/packlets/object"],
-        "~/check": ["./src/packlets/check"]
+        "@/*": ["./src/packlets/*"]
       }
     }
   }

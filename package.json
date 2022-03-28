@@ -3,21 +3,21 @@
   "version": "0.0.0",
   "type": "module",
   "description": "Toolkit for Javascript and Typescript development.",
-  "main": "./lib/index.cjs",
-  "module": "./lib/index.js",
+  "main": "lib/index.cjs",
+  "module": "lib/index.js",
   "exports": {
     "./array": {
-      "import": "./lib/array.js",
-      "require": "./lib/array.cjs"
+      "import": "lib/array.js",
+      "require": "lib/array.cjs"
     },
     "./object": {
-      "import": "./lib/object.js",
-      "require": "./lib/object.cjs"
+      "import": "lib/object.js",
+      "require": "lib/object.cjs"
     }
   },
-  "jsdelivr": "./lib/umd.min.js",
-  "unpkg": "./lib/umd.min.js",
-  "types": "./lib/index.d.ts",
+  "jsdelivr": "lib/umd.min.js",
+  "unpkg": "lib/umd.min.js",
+  "types": "lib/index.d.ts",
   "files": [
     "lib"
   ],
@@ -46,11 +46,15 @@
   "devDependencies": {
     "@fellwork/prettier-config": "^0.0.2",
     "@rushstack/eslint-config": "^2.5.2",
+    "esbuild": "^0.14.28",
     "eslint": "^8.12.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.6.1",
     "pretty-quick": "^3.1.3",
+    "rollup": "^2.70.1",
+    "rollup-plugin-dts": "^4.2.0",
+    "rollup-plugin-esbuild": "^4.8.2",
     "typescript": "^4.6.3",
     "vitest": "^0.7.12"
   },

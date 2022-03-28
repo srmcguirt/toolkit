@@ -84,5 +84,8 @@
   "javascript.preferences.quoteStyle": "single",
   "typescript.preferences.quoteStyle": "single",
   "javascript.updateImportsOnFileMove.enabled": "never",
-  "typescript.updateImportsOnFileMove.enabled": "never"
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "conventionalCommits.scopes": [
+    "lint"
+  ]
 }

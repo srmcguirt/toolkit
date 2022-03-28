@@ -7,7 +7,11 @@ module.exports = {
     '@rushstack/eslint-config/mixins/packlets',
     'plugin:prettier/recommended'
   ],
-  parserOptions: { tsconfigRootDir: __dirname },
+  parserOptions: {
+    sourceType: 'module',
+    ecmaVersion: 2022,
+    tsconfigRootDir: __dirname
+  },
   rules: {
     'prettier/prettier': [
       'error',
