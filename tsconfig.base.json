@@ -1,0 +1,37 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig.json",
+    "compilerOptions": {
+      "baseUrl": "./src",
+      "allowSyntheticDefaultImports": true,
+      "alwaysStrict": true,
+      "allowUnreachableCode": false,
+      "allowUnusedLabels": false,
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "importHelpers": false,
+      "lib": ["ESNext"],
+      "module": "esnext",
+      "moduleResolution": "node",
+      "newLine": "lf",
+      "noEmitOnError":true,
+      "noFallthroughCasesInSwitch": true,
+      "noImplicitReturns": true,
+      "noImplicitThis": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "pretty": true,
+      "resolveJsonModule": true,
+      "sourceMap": false,
+      "skipLibCheck": true,
+      "strict": true,
+      "strictNullChecks": true,
+      "strictPropertyInitialization": true,
+      "target": "ES2020",
+      "paths": {
+        "~": ["./src"],
+        "~/array": ["./src/packlets/array"],
+        "~/object": ["./src/packlets/object"],
+        "~/check": ["./src/packlets/check"]
+      }
+    }
+  }

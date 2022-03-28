@@ -1,0 +1,88 @@
+{
+  //------ Editor ------//
+  "editor.fontFamily": "'Fira Code iScript', 'Fira Code', Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "comment",
+          // "entity.name.type.class", //class names
+          "keyword", //import, export, return…
+          "storage.modifier", //static keyword
+          "storage.type", //class keyword
+          "support.class.builtin",
+          "keyword.control",
+          // "constant.language",
+          "entity.other.attribute-name"
+          // "string.quoted.single",
+          // "entity.name.method",
+          // "entity.name.tag"
+        ],
+        "settings": {
+          "fontStyle": "italic" // the font style that should be applied
+        }
+      },
+      {
+        "scope": ["keyword.operator", "entity.name.type"],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.detectIndentation": false,
+  "editor.inlineSuggest.enabled": false,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.markdownlint": true
+  },
+  //------ Eslint ------//
+  "eslint.alwaysShowStatus": false,
+  "eslint.format.enable": true,
+  "eslint.enable": true,
+  "eslint.run": "onType",
+  "eslint.nodeEnv": "development",
+  "eslint.packageManager": "pnpm",
+  "eslint.probe": ["javascript", "typescript", "html", "vue", "markdown"],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html",
+    "vue",
+    "vue-html"
+  ],
+  "eslint.options": {
+    "extensions": [".html", ".cjs", ".mjs", ".js", ".vue", ".jsx", ".ts"]
+  },
+  //------ Extensions ------//
+  "[jsonc]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.tabSize": 2
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.tabSize": 2
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.tabSize": 2
+  },
+  //------ Style ------//
+  "javascript.format.semicolons": "remove",
+  "typescript.format.semicolons": "remove",
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "typescript.updateImportsOnFileMove.enabled": "never"
+}
